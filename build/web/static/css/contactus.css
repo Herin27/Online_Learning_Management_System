@@ -1,0 +1,102 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Carousel Styling */
+.carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: #ddd;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Hero Cover Styling */
+.Hero-Cover {
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(63, 94, 251, 0.8), rgba(252, 70, 107, 0.8)),
+        url('path/to/your/image.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.Hero-Cover h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.Hero-Cover p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Buttons in Hero Section */
+.Hero-Cover .btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #36d1dc 0%, #5b86e5 100%);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Hero-Cover .btn:hover {
+    background: linear-gradient(90deg, #5b86e5 0%, #36d1dc 100%);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .Hero-Cover h1 {
+        font-size: 2.5rem;
+    }
+
+    .Hero-Cover p {
+        font-size: 1.2rem;
+    }
+}

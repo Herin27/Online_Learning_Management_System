@@ -1,0 +1,101 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Light background for a clean look */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50; /* Dark header */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2.5rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Container for the courses */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+/* Individual course card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the card body */
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    color: #34495e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Footer for the course card (Instructor and Duration) */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.card-footer .instructor {
+    font-size: 1rem;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.card-footer .duration {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Ensure cards occupy most of the screen width */
+        max-width: 400px; /* Limit max width */
+    }
+}

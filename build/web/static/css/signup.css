@@ -1,0 +1,116 @@
+/* signup.css */
+
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Form Container */
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-signin:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Title */
+.form-signin h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Form Elements */
+.form-elm {
+  margin-bottom: 20px;
+}
+
+.form-elm label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.form-elm input {
+  width: 92%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-elm input:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(90deg, #ff8a00 0%, #da1b60 100%);
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional Styling for Error Message */
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffcccb;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-signin {
+  animation: slide-in 0.6s ease-out;
+}
